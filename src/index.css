@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Nanum Myeongjo", serif;
+  --font-sans: "Pretendard", system-ui, -apple-system, sans-serif;
+  
+  --color-primary: #B28F5A;
+  --color-secondary: #8A5A44;
+  --color-warm-bg: #FDFBF7;
+  --color-warm-text: #2D241E;
+}
+
+@layer base {
+  body {
+    @apply bg-warm-bg text-warm-text font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4 {
+    @apply font-serif;
+  }
+}
